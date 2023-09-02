@@ -1,0 +1,519 @@
+
+.body {
+    margin: 0%;
+    padding: 0%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+
+    position: relative;
+    .background {
+        z-index: 1;
+        width: 100%;
+        .svgBackground  {
+            width: 100%;
+        }    
+    }
+    .header {
+        position: absolute;
+        z-index: 2;
+        align-self: first baseline;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .headerCont {
+            position: relative;
+            margin: 2rem 2rem 0;
+            display: flex;
+            flex-direction: column wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .h1 {
+                position: absolute;
+                z-index: 2;
+                font-family: 'Source Code Pro', monospace;
+                font-weight: 700;
+                font-size: 4rem;
+                text-decoration: line-through;
+            }
+            .headerImg {
+                z-index: 1;
+                width: 90%;
+            }
+        }
+        .headerCont1 {
+        position: relative;
+        top: -1.5%;
+        right: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            .headerCont3 {
+                position: absolute;
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                align-items: center; 
+                gap: 1rem;
+                .h2 {
+                    white-space: nowrap;
+                    font-family: 'Source Code Pro', monospace;
+                    font-size: 0.9rem;
+                    width: 100%;
+                }
+                .headerImg2 {
+                    width: 100%;
+                }
+            }
+            .headerImg1 {
+            width: 90%;
+            }
+        }
+    }
+    .main { 
+        position: absolute;
+        z-index: 3;
+        top: 28%;
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        .datosUser {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            .smileMain {
+                position: absolute;
+                z-index: 2;
+                top: 10%;
+                display: none;
+            }    
+            .contNameUser{
+            position: absolute;
+            z-index: 2;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                .textNameUser {
+                font-family: 'Source Code Pro', monospace;
+                }
+                .labelDateUser {
+                position: relative;
+                display: inline-block;
+                    .imgLabel {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                    }
+                    .nameUser {
+                        position: absolute;
+                        bottom: 3px;
+                        left: 4px;
+                        width: 92%;
+                        padding: 14px;
+                        border: none;
+                        border-radius: 5px;
+                        box-shadow: 0px 0px 4px rgba(0, 0, 0, -5.8);
+                        font-size: 20px;
+                    }
+                }
+                .btnMain {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    cursor: pointer;
+                    color: black;
+                    text-align: center;
+                    margin-top: 1rem;
+                    .imgButton{
+                        z-index: 2;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .btnAvanzar {
+                        position: absolute;
+                        z-index: 2;
+                        font-size: 1.5rem;
+                        margin-top: 1rem;            
+                    }
+                    }
+            }   
+            .datosTemas {
+            position: absolute;
+            z-index: 2;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                .selecTema {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .textNameUser {
+                        font-family: 'Source Code Pro', monospace;
+                    }
+                    .theme-buttons {
+                        display: flex;
+                        gap: 1rem;
+                        .theme-button {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            cursor: pointer;
+                            color: black;
+                            text-align: center;
+                            .imgButton {
+                                z-index: 2;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .nombreTema {
+                                position: absolute;
+                                z-index: 2;
+                                font-size: 1.5rem;
+                                margin-top: 1rem;
+                            }
+                        }            
+                    }        
+                }
+            } 
+            .jugar {
+                position: absolute;
+                z-index: 2;
+                display: none;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                width: 85%;
+                height: 100%;
+                justify-content: space-around;
+                align-items: flex-start;
+                .cont1{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: flex-start;
+                    .contJugar{
+                        width: 35%;
+                        .datosUser {
+                            display: flex;
+                            flex-flow: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: 2rem;
+                            width: 100%;
+                                .div {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                .h2 {
+                                    font-family: 'Courier New', Courier, monospace;
+                                }
+                                .div {
+                                    position: relative;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    cursor: pointer;
+                                    color: black;
+                                    text-align: center;
+                                    .h3 {
+                                        position: absolute;
+                                        z-index: 2;
+                                        font-size: 1.5rem;
+                                    }
+                                    .img {
+                                        z-index: 2;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        .datosLetras {
+                            .h2{
+                                margin: 2rem 1rem 0 0;
+                            }
+                            .div{
+                                display: flex;
+                                flex-flow: row;
+                                justify-content: space-between;
+                                align-items: center;
+                        
+                                margin: 1rem 0 0 0;
+                                .buttonLetras{
+                                position: relative;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                cursor: pointer;
+                                color: black;
+                                text-align: center;
+                                    .h3{
+                                    position: absolute;
+                                    z-index: 2;
+                                    font-size: 1.5rem;
+                                    margin: 10%;
+                                    }        
+                                    .imgBoton{
+                                    z-index: 1;
+                                    width: auto;
+                                    height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .datosPeople {
+                        position: relative;
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-items: center;        
+                        .ropesvg{
+                            z-index: 1;
+                        }
+                        .personaje{
+                            position: absolute;
+                            z-index: 2;
+                            top: 70%;
+                
+                            display: flex;
+                            flex-wrap: nowrap;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            .cabeza{
+                                z-index: 1;
+                            }
+                            .cuerpo{
+                                z-index: 1;
+                            }
+                            .brazos{
+                                position: absolute;
+                                z-index: 2;
+                                top: 40%;
+                                left: -25%;
+                
+                                display: flex;
+                                flex-wrap: nowrap;
+                                .brazoizq{}
+                                .brazoder{}
+                            }
+                            .piernas{
+                                position: absolute;
+                                z-index: 2;
+                                bottom: -15%;
+                                left: -25%;
+                
+                                display: flex;
+                                flex-wrap: nowrap;
+                                .piernaizq{}
+                                .piernader{}
+                            }
+                        }
+                    }
+                    .comentarios {
+                        width: 25%;
+                        .datosComentarios{
+                            width: 100%;
+                            .h3victoria{
+                                display: none;
+                            }
+                            .h3derrota{
+                                display: none;
+                            }
+                        }
+                        .datosAciertos{
+                            width: 100%;
+                            .buttonAciertos{
+                                display: none;
+                            }
+                            .alertAciertos{
+                                display: none;
+                            }
+        
+                    }
+                    }
+                }
+                .cont2{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-content: center;
+                    justify-content: center;
+                    align-items: center;          
+                    .datosPalabras{
+                        display: flex;
+                        flex-flow: row;
+                        width: 100%;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        .butonLetras{
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            cursor: pointer;
+                            color: black;
+                            text-align: center;
+                                .h{
+                                    position: absolute;
+                                    z-index: 2;
+                                    font-size: 1rem;
+                                    margin: 10%;
+                                    width: 100%;
+                                }        
+                                .imgBoton{
+                                z-index: 1;
+                                width: 100%;
+                                height: 100%;
+                                    }
+                            
+                        
+                    }
+                }
+                } 
+            }
+            .jugardenuevo{
+                display: none;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+                position: absolute;
+                z-index: 2;
+                height: 100%;
+                .incorrecto{
+                    position: relative;
+                    z-index: 2;
+                    left: 20rem;
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+                    color: black;
+                    text-align: center;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    .h2{
+                        position: absolute;
+                        z-index: 2;
+                        font-size: 1rem;
+                    }
+                    .svgperder{
+                        z-index: 2;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .reinicio{
+                    position: relative;
+                    z-index: 2;
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+                    color: black;
+                    text-align: center;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    .h2{
+                        position: absolute;
+                        z-index: 2;
+                        font-size: 1rem;
+                    }
+                    .svgreinicio{
+                        z-index: 2;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .imgmain {
+                width: 95%;
+                z-index: 1;
+            }
+        }
+        .datosScore {
+            display: none;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: start;
+            align-items: center;
+            width: 20%;
+            .h2Score{
+                position: absolute;
+                z-index: 2;
+            }
+            .svgscore{
+                z-index: 1;
+                width: 74%;
+            }
+            .contnombres{
+                position: absolute;
+                z-index: 2;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                top: 10%;
+                gap: 1rem;
+                .h3{}
+                .buttonpuntos{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+                    color: black;
+                    text-align: center;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    .h2{
+                        position: absolute;
+                        z-index: 2;
+                        font-size: 1rem;
+                    }
+                    .imgpuntos{
+                        z-index: 2;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        position: absolute;
+        z-index: 2;
+        align-self: flex-end;
+        justify-self: start;
+        margin-left: 2rem;
+        .h2 {
+            font-size: 'Source Code Pro', monospace;
+        }
+    }
+}
+
+

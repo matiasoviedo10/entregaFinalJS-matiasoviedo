@@ -1,0 +1,502 @@
+.body {
+  margin: 0%;
+  padding: 0%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  position: relative;
+}
+.body .background {
+  z-index: 1;
+  width: 100%;
+}
+.body .background .svgBackground {
+  width: 100%;
+}
+.body .header {
+  position: absolute;
+  z-index: 2;
+  align-self: first baseline;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body .header .headerCont {
+  position: relative;
+  margin: 2rem 2rem 0;
+  display: flex;
+  flex-direction: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.body .header .headerCont .h1 {
+  position: absolute;
+  z-index: 2;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+  font-size: 4rem;
+  text-decoration: line-through;
+}
+.body .header .headerCont .headerImg {
+  z-index: 1;
+  width: 90%;
+}
+.body .header .headerCont1 {
+  position: relative;
+  top: -1.5%;
+  right: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body .header .headerCont1 .headerCont3 {
+  position: absolute;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.body .header .headerCont1 .headerCont3 .h2 {
+  white-space: nowrap;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.body .header .headerCont1 .headerCont3 .headerImg2 {
+  width: 100%;
+}
+.body .header .headerCont1 .headerImg1 {
+  width: 90%;
+}
+.body .main {
+  position: absolute;
+  z-index: 3;
+  top: 28%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.body .main .datosUser .smileMain {
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  display: none;
+}
+.body .main .datosUser .contNameUser {
+  position: absolute;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .contNameUser .textNameUser {
+  font-family: "Source Code Pro", monospace;
+}
+.body .main .datosUser .contNameUser .labelDateUser {
+  position: relative;
+  display: inline-block;
+}
+.body .main .datosUser .contNameUser .labelDateUser .imgLabel {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.body .main .datosUser .contNameUser .labelDateUser .nameUser {
+  position: absolute;
+  bottom: 3px;
+  left: 4px;
+  width: 92%;
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0);
+  font-size: 20px;
+}
+.body .main .datosUser .contNameUser .btnMain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  margin-top: 1rem;
+}
+.body .main .datosUser .contNameUser .btnMain .imgButton {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.body .main .datosUser .contNameUser .btnMain .btnAvanzar {
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.body .main .datosUser .datosTemas {
+  position: absolute;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .datosTemas .selecTema {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .datosTemas .selecTema .textNameUser {
+  font-family: "Source Code Pro", monospace;
+}
+.body .main .datosUser .datosTemas .selecTema .theme-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.body .main .datosUser .datosTemas .selecTema .theme-buttons .theme-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+}
+.body .main .datosUser .datosTemas .selecTema .theme-buttons .theme-button .imgButton {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.body .main .datosUser .datosTemas .selecTema .theme-buttons .theme-button .nombreTema {
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.body .main .datosUser .jugar {
+  position: absolute;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 85%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.body .main .datosUser .jugar .cont1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+.body .main .datosUser .jugar .cont1 .contJugar {
+  width: 35%;
+}
+.body .main .datosUser .jugar .cont1 .contJugar .datosUser {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+.body .main .datosUser .jugar .cont1 .contJugar .datosUser .div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .jugar .cont1 .contJugar .datosUser .div .h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+.body .main .datosUser .jugar .cont1 .contJugar .datosUser .div .div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+}
+.body .main .datosUser .jugar .cont1 .contJugar .datosUser .div .div .h3 {
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5rem;
+}
+.body .main .datosUser .jugar .cont1 .contJugar .datosUser .div .div .img {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.body .main .datosUser .jugar .cont1 .contJugar .datosLetras .h2 {
+  margin: 2rem 1rem 0 0;
+}
+.body .main .datosUser .jugar .cont1 .contJugar .datosLetras .div {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 0 0;
+}
+.body .main .datosUser .jugar .cont1 .contJugar .datosLetras .div .buttonLetras {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+}
+.body .main .datosUser .jugar .cont1 .contJugar .datosLetras .div .buttonLetras .h3 {
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5rem;
+  margin: 10%;
+}
+.body .main .datosUser .jugar .cont1 .contJugar .datosLetras .div .buttonLetras .imgBoton {
+  z-index: 1;
+  width: auto;
+  height: auto;
+}
+.body .main .datosUser .jugar .cont1 .datosPeople {
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .jugar .cont1 .datosPeople .ropesvg {
+  z-index: 1;
+}
+.body .main .datosUser .jugar .cont1 .datosPeople .personaje {
+  position: absolute;
+  z-index: 2;
+  top: 70%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .jugar .cont1 .datosPeople .personaje .cabeza {
+  z-index: 1;
+}
+.body .main .datosUser .jugar .cont1 .datosPeople .personaje .cuerpo {
+  z-index: 1;
+}
+.body .main .datosUser .jugar .cont1 .datosPeople .personaje .brazos {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: -25%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.body .main .datosUser .jugar .cont1 .datosPeople .personaje .piernas {
+  position: absolute;
+  z-index: 2;
+  bottom: -15%;
+  left: -25%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.body .main .datosUser .jugar .cont1 .comentarios {
+  width: 25%;
+}
+.body .main .datosUser .jugar .cont1 .comentarios .datosComentarios {
+  width: 100%;
+}
+.body .main .datosUser .jugar .cont1 .comentarios .datosComentarios .h3victoria {
+  display: none;
+}
+.body .main .datosUser .jugar .cont1 .comentarios .datosComentarios .h3derrota {
+  display: none;
+}
+.body .main .datosUser .jugar .cont1 .comentarios .datosAciertos {
+  width: 100%;
+}
+.body .main .datosUser .jugar .cont1 .comentarios .datosAciertos .buttonAciertos {
+  display: none;
+}
+.body .main .datosUser .jugar .cont1 .comentarios .datosAciertos .alertAciertos {
+  display: none;
+}
+.body .main .datosUser .jugar .cont2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .jugar .cont2 .datosPalabras {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .jugar .cont2 .datosPalabras .butonLetras {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+}
+.body .main .datosUser .jugar .cont2 .datosPalabras .butonLetras .h {
+  position: absolute;
+  z-index: 2;
+  font-size: 1rem;
+  margin: 10%;
+  width: 100%;
+}
+.body .main .datosUser .jugar .cont2 .datosPalabras .butonLetras .imgBoton {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.body .main .datosUser .jugardenuevo {
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+}
+.body .main .datosUser .jugardenuevo .incorrecto {
+  position: relative;
+  z-index: 2;
+  left: 20rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .jugardenuevo .incorrecto .h2 {
+  position: absolute;
+  z-index: 2;
+  font-size: 1rem;
+}
+.body .main .datosUser .jugardenuevo .incorrecto .svgperder {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.body .main .datosUser .jugardenuevo .reinicio {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .jugardenuevo .reinicio .h2 {
+  position: absolute;
+  z-index: 2;
+  font-size: 1rem;
+}
+.body .main .datosUser .jugardenuevo .reinicio .svgreinicio {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.body .main .datosUser .imgmain {
+  width: 95%;
+  z-index: 1;
+}
+.body .main .datosScore {
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  width: 20%;
+}
+.body .main .datosScore .h2Score {
+  position: absolute;
+  z-index: 2;
+}
+.body .main .datosScore .svgscore {
+  z-index: 1;
+  width: 74%;
+}
+.body .main .datosScore .contnombres {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  gap: 1rem;
+}
+.body .main .datosScore .contnombres .buttonpuntos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosScore .contnombres .buttonpuntos .h2 {
+  position: absolute;
+  z-index: 2;
+  font-size: 1rem;
+}
+.body .main .datosScore .contnombres .buttonpuntos .imgpuntos {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.body .footer {
+  position: absolute;
+  z-index: 2;
+  align-self: flex-end;
+  justify-self: start;
+  margin-left: 2rem;
+}
+.body .footer .h2 {
+  font-size: "Source Code Pro", monospace;
+}
+
+/*# sourceMappingURL=style.css.map */

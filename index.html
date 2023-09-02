@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Juego del Ahorcado</title>
+
+        <!-- Importar la fuente de Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">        
+        
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body class="body">
+
+        <div class="background">
+            <img src="./public/svg/background.svg" alt="imagenFondo" class="svgBackground">
+        </div>
+
+        <header class="header">
+
+            <div class="headerCont">
+                <h1 class="h1">JUEGO DEL AHORCADO</h1>
+                <img src="public/svg/headerImg.svg" alt="vectorEncabezado" class="headerImg">
+            </div>
+
+            <div class="headerCont1">
+                <div class="headerCont3">
+                    <h2 class="h2">Juega con amigos, pero no pierdas</h2>
+                    <img src="./public/svg/headerImg2.svg" alt="vectorEncabezadoCara" class="headerImg2">
+                </div>
+                <img src="./public/svg/headerImg1.svg" alt="vectorEncabezado" class="headerImg1">
+            </div>
+        </header>
+
+        <main class="main">
+
+            <div class="datosUser">
+                <img class="smileMain" id="smileMain" src="./public/svg/mainImg1.svg" alt="vector de caras">
+
+                <div class="contNameUser" id="contNameUser">
+                    <h3 class="textNameUser">Ingresa tu nombre</h3>
+                    <label for="player-name" class="labelDateUser">
+                        <img src="./public/svg/imgLabel.svg" alt="imagen input" class="imgLabel">
+                        <input type="text" id="player-name" placeholder="Ingresa tu nombre" class="nameUser">
+                    </label>
+                    <div class="btnMain" id="btnMain">
+                        <img class="imgButton" src="./public/svg/imgButtontheme.svg" alt="avanzar">
+                        <h2 class="btnAvanzar" >Avanzar</h2>
+                    </div>
+                </div>
+
+                <div class="datosTemas" id="contThemeSelect">
+
+                    <div class="selecTema">
+                        <h3 class="textNameUser">Selecciona un tema</h3>
+                        <div class="theme-buttons">
+                            <div class="theme-button" data-tema="Colores" id="tema1">
+                                <img class="imgButton" src="./public/svg/imgButtontheme.svg" alt="Tema 1">
+                                <h2 class="nombreTema">Colores</h2>
+                            </div>
+                            <div class="theme-button" data-tema="Frutas" id="tema2">
+                                <img class="imgButton" src="./public/svg/imgButtontheme.svg" alt="Tema 2">
+                                <h2 class="nombreTema">Frutas</h2>
+                            </div>
+                            <div class="theme-button" data-tema="Animales" id="tema3">
+                                <img class="imgButton" src="./public/svg/imgButtontheme.svg" alt="Tema 3">
+                                <h2 class="nombreTema">Animales</h2>
+                            </div>
+                            <div class="theme-button" data-tema="Ciudad" id="tema4">
+                                <img class="imgButton" src="./public/svg/imgButtontheme.svg" alt="Tema 4">
+                                <h2 class="nombreTema">Ciudad</h2>
+                            </div>
+                            <div class="theme-button" data-tema="Paises" id="tema5">
+                                <img class="imgButton" src="./public/svg/imgButtontheme.svg" alt="Tema 5">
+                                <h2 class="nombreTema">Paises</h2>
+                            </div>
+                        </div> 
+                    </div>
+                
+                </div>
+                
+                <div class="jugar">
+
+                    <div class="cont1">
+
+                    <div class="contJugar">
+                        <div class="datosUser">
+                            <div class="div">
+                                <h2 class="h2">Tema</h2>
+                                <div class="div">
+                                    <h3 class="h3 selectedTheme">Colores</h3>
+                                    <img src="./public/svg/vectordatjugar.svg" alt="vector datos usuario" class="img">
+                                </div>
+                            </div>
+                            
+                            <div class="div">
+                                <h2 class="h2">Jugador</h2>
+                                <div class="div">
+                                        <h3 class="h3 nombreJugador">Jugador1</h3>
+                                        <img src="./public/svg/vectordatjugar.svg" alt="vector datos usuario" class="img">
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="datosLetras">
+                            <h2 class="h2">Elegir Letra</h2>
+                            <div class="div">
+                                <div class="buttonLetras" id="letraA">
+                                    <h3 class="h3 contbuton">a</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraB">
+                                    <h3 class="h3 contbuton">b</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraC">
+                                    <h3 class="h3 contbuton">c</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraD">
+                                    <h3 class="h3 contbuton">d</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraE">
+                                    <h3 class="h3 contbuton">e</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraF">
+                                    <h3 class="h3 contbuton">f</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraG">
+                                    <h3 class="h3 contbuton">g</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                            </div>
+                            <div class="div">
+                                <div class="buttonLetras" id="letraH">
+                                    <h3 class="h3 contbuton">h</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraI">
+                                    <h3 class="h3 contbuton">i</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraJ">
+                                    <h3 class="h3 contbuton">j</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraK">
+                                    <h3 class="h3 contbuton">k</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraL">
+                                    <h3 class="h3 contbuton">l</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraM">
+                                    <h3 class="h3 contbuton">m</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraN">
+                                    <h3 class="h3 contbuton">n</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                            </div>
+                            <div class="div">
+                                <div class="buttonLetras" id="letraÑ">
+                                    <h3 class="h3 contbuton">ñ</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraO">
+                                    <h3 class="h3 contbuton">o</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraP">
+                                    <h3 class="h3 contbuton">p</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraQ">
+                                    <h3 class="h3 contbuton">q</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraR">
+                                    <h3 class="h3 contbuton">r</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraS">
+                                    <h3 class="h3 contbuton">s</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraT">
+                                    <h3 class="h3 contbuton">t</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                            </div>
+                            <div class="div">
+                                <div class="buttonLetras" id="letraU">
+                                    <h3 class="h3 contbuton">u</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraV">
+                                    <h3 class="h3 contbuton">v</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraW">
+                                    <h3 class="h3 contbuton">w</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraX">
+                                    <h3 class="h3 contbuton">x</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraY">
+                                    <h3 class="h3 contbuton">y</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras" id="letraZ">
+                                    <h3 class="h3 contbuton">z</h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="buttonLetras">
+                                    <h3 class="h3 contbuton"></h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="datosPeople">
+                            <img class="ropesvg" src="./public/svg/rope.svg" alt="cuerda ahorcado">
+                            <div class="personaje">
+                            <img src="./public/svg/rostro.svg" alt="cabeza de personaje" class="cabeza">
+                            <img src="./public/svg/body.svg" alt="cuerpo de personaje" class="cuerpo">
+                            <div class="brazos">
+                            <img src="./public/svg/brazoizq.svg" alt="brazo izquierdo" class="brazoizq">
+                            <img src="./public/svg/brazoder.svg" alt="brazo derecho" class="brazoder">
+                            </div>
+                            <div class="piernas">
+                            <img src="./public/svg/legizq.svg" alt="pierna izquierda" class="piernaizq">
+                            <img src="./public/svg/legder.svg" alt="pierna derecha" class="piernader">
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="comentarios">
+                        <div class="datosComentarios">
+                            <h3 class="h3intentos">intentos</h3>
+                            <h3 class="h3victoria">vamos!! adivinaste</h3>
+                            <h3 class="h3derrota">Buuu!! erraste</h3>
+                        </div>
+                        
+                        <div class="datosAciertos">
+                            <div class="buttonAciertos">
+                                <h3 class="h3">Correcto!</h3>
+                                <img class="svgBoton" src="" alt="vector boton aciertos">
+                            </div>
+                            <div class="alertAciertos">
+                                <h3 class="h3">Incorrecto!</h3>
+                                <img class="svgBoton" src="" alt="vector boton aciertos">
+                            </div>
+        
+                        </div>
+    
+                    </div>
+
+                    </div>
+
+                    <div class="cont2">
+    
+                    <div class="datosPalabras">
+                                <div class="butonLetras" id="letra1">
+                                    <h3 class="h"></h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="butonLetras" id="letra2">
+                                    <h3 class="h"></h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="butonLetras" id="letra3">
+                                    <h3 class="h"></h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="butonLetras" id="letra4">
+                                    <h3 class="h"></h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="butonLetras" id="letra5">
+                                    <h3 class="h"></h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="butonLetras" id="letra6">
+                                    <h3 class="h"></h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                <div class="butonLetras" id="letra7">
+                                    <h3 class="h"></h3>
+                                    <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                </div>
+                                    <div class="butonLetras" id="letra8">
+                                        <h3 class="h"></h3>
+                                        <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                    </div>
+                                    <div class="butonLetras" id="letra9">
+                                        <h3 class="h"></h3>
+                                        <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                    </div>
+                                    <div class="butonLetras" id="letra10">
+                                        <h3 class="h"></h3>
+                                        <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                    </div>
+                                    <div class="butonLetras" id="letra11">
+                                        <h3 class="h"></h3>
+                                        <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                    </div>
+                                    <div class="butonLetras" id="letra12">
+                                        <h3 class="h"></h3>
+                                        <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                    </div>
+                                    <div class="butonLetras" id="letra13">
+                                        <h3 class="h"></h3>
+                                        <img class="imgBoton" src="./public/svg/buttonletter.svg" alt="vector boton letra">
+                                    </div>
+                    </div>
+
+                    </div>
+
+    
+                </div>
+                
+                <div class="jugardenuevo">
+                <div class="incorrecto">
+                    <h2 class="h2">Haz Perdido!</h2>
+                    <img src="./public/svg/incorrecto.svg" alt="svg de perder" class="svgperder">
+                </div>
+                <div class="reinicio">
+                    <h2 class="h2">Jugar de Nuevo</h2>
+                    <img src="./public/svg/reinicio.svg" alt="svg de reinicio" class="svgreinicio">
+                </div>
+                </div>
+
+                <img src="./public/svg/mainImg.svg" alt="vector main" class="imgmain">
+            </div>
+
+            <div class="datosScore">
+                <h2 class="h2Score">SCORE</h2>
+                <img src="./public/svg/score.svg" alt="imagen de score" class="svgscore">
+                <div class="contnombres">
+                    <h3 class="h3">Juan Carlos</h3>
+                    <div class="buttonpuntos">
+                        <h2 class="h2">100pt</h2>
+                        <img src="./public/svg/puntos.svg" alt="vector de puntaje" class="imgpuntos">
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <footer class="footer">
+            <h2 class="h2">
+                Esto no tiene repercuciones en la vida real.
+            </h2>
+        </footer>
+
+        
+        <script src="./js/app.js"></script>
+    </body>
+
+
+</html>
