@@ -5,6 +5,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto;
   position: relative;
+  font-family: "Source Code Pro", monospace, sans-serif;
 }
 .body .background {
   z-index: 1;
@@ -301,9 +302,11 @@
 }
 .body .main .datosUser .jugar .cont1 .datosPeople .personaje .cabeza {
   z-index: 1;
+  display: none;
 }
 .body .main .datosUser .jugar .cont1 .datosPeople .personaje .cuerpo {
   z-index: 1;
+  display: none;
 }
 .body .main .datosUser .jugar .cont1 .datosPeople .personaje .brazos {
   position: absolute;
@@ -313,6 +316,12 @@
   display: flex;
   flex-wrap: nowrap;
 }
+.body .main .datosUser .jugar .cont1 .datosPeople .personaje .brazos .brazoizq {
+  display: none;
+}
+.body .main .datosUser .jugar .cont1 .datosPeople .personaje .brazos .brazoder {
+  display: none;
+}
 .body .main .datosUser .jugar .cont1 .datosPeople .personaje .piernas {
   position: absolute;
   z-index: 2;
@@ -321,11 +330,23 @@
   display: flex;
   flex-wrap: nowrap;
 }
+.body .main .datosUser .jugar .cont1 .datosPeople .personaje .piernas .piernaizq {
+  display: none;
+}
+.body .main .datosUser .jugar .cont1 .datosPeople .personaje .piernas .piernader {
+  display: none;
+}
 .body .main .datosUser .jugar .cont1 .comentarios {
   width: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 .body .main .datosUser .jugar .cont1 .comentarios .datosComentarios {
   width: 100%;
+  text-align: center;
 }
 .body .main .datosUser .jugar .cont1 .comentarios .datosComentarios .h3victoria {
   display: none;
@@ -338,9 +359,25 @@
 }
 .body .main .datosUser .jugar .cont1 .comentarios .datosAciertos .buttonAciertos {
   display: none;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .jugar .cont1 .comentarios .datosAciertos .buttonAciertos .h3 {
+  position: absolute;
 }
 .body .main .datosUser .jugar .cont1 .comentarios .datosAciertos .alertAciertos {
   display: none;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .jugar .cont1 .comentarios .datosAciertos .alertAciertos .h3 {
+  position: absolute;
 }
 .body .main .datosUser .jugar .cont2 {
   width: 100%;
@@ -395,8 +432,8 @@
 .body .main .datosUser .jugardenuevo .incorrecto {
   position: relative;
   z-index: 2;
-  left: 20rem;
-  display: flex;
+  left: 15rem;
+  display: none;
   flex-direction: column;
   cursor: pointer;
   color: black;
@@ -415,10 +452,34 @@
   width: 100%;
   height: 100%;
 }
+.body .main .datosUser .jugardenuevo .correcto {
+  position: relative;
+  z-index: 2;
+  left: 15rem;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.body .main .datosUser .jugardenuevo .correcto .h2 {
+  position: absolute;
+  z-index: 2;
+  font-size: 1rem;
+}
+.body .main .datosUser .jugardenuevo .correcto .svgperder {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
 .body .main .datosUser .jugardenuevo .reinicio {
   position: relative;
   z-index: 2;
   display: flex;
+  right: 15rem;
   flex-direction: column;
   cursor: pointer;
   color: black;
@@ -442,7 +503,7 @@
   z-index: 1;
 }
 .body .main .datosScore {
-  display: none;
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: start;
@@ -453,40 +514,14 @@
   position: absolute;
   z-index: 2;
 }
+.body .main .datosScore .hscore {
+  position: absolute;
+  z-index: 2;
+  top: 13%;
+}
 .body .main .datosScore .svgscore {
   z-index: 1;
   width: 74%;
-}
-.body .main .datosScore .contnombres {
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  top: 10%;
-  gap: 1rem;
-}
-.body .main .datosScore .contnombres .buttonpuntos {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  color: black;
-  text-align: center;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-.body .main .datosScore .contnombres .buttonpuntos .h2 {
-  position: absolute;
-  z-index: 2;
-  font-size: 1rem;
-}
-.body .main .datosScore .contnombres .buttonpuntos .imgpuntos {
-  z-index: 2;
-  width: 100%;
-  height: 100%;
 }
 .body .footer {
   position: absolute;
@@ -497,6 +532,10 @@
 }
 .body .footer .h2 {
   font-size: "Source Code Pro", monospace;
+}
+.body .disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */

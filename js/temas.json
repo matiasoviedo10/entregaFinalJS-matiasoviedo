@@ -1,0 +1,84 @@
+{
+    "temas": [
+    {
+        "id": "Colores",
+        "nombre": "Colores",
+        "palabras": [
+        { "palabra": "rojo", "descripcion": "Un color cálido y brillante." },
+        { "palabra": "azul", "descripcion": "Un color que representa el cielo y el mar." },
+        { "palabra": "verde", "descripcion": "Un color asociado con la naturaleza y la esperanza." },
+        { "palabra": "amarillo", "descripcion": "Un color brillante y alegre." },
+        { "palabra": "naranja", "descripcion": "Un color vibrante y lleno de energía." },
+        { "palabra": "morado", "descripcion": "Un color misterioso y elegante." },
+        { "palabra": "rosa", "descripcion": "Un color suave y romántico." },
+        { "palabra": "gris", "descripcion": "Un color neutro y sofisticado." },
+        { "palabra": "blanco", "descripcion": "Un color puro y limpio." },
+        { "palabra": "negro", "descripcion": "Un color elegante y misterioso." }
+        ]
+    },
+    {
+        "id": "Frutas",
+        "nombre": "frutas",
+        "palabras": [
+        { "palabra": "manzana", "descripcion": "Una fruta roja y jugosa." },
+        { "palabra": "platano", "descripcion": "Una fruta amarilla y dulce." },
+        { "palabra": "naranja", "descripcion": "Una fruta cítrica y refrescante." },
+        { "palabra": "uva", "descripcion": "Una fruta pequeña y jugosa que puede ser verde o morada." },
+        { "palabra": "sandia", "descripcion": "Una fruta grande y refrescante, con pulpa roja y semillas negras." },
+        { "palabra": "fresa", "descripcion": "Una fruta pequeña y roja, con sabor dulce y ácido." },
+        { "palabra": "mango", "descripcion": "Una fruta tropical de color amarillo y sabor dulce." },
+        { "palabra": "pina", "descripcion": "Una fruta tropical y jugosa, con sabor dulce y ácido." },
+        { "palabra": "kiwi", "descripcion": "Una fruta pequeña y verde, con sabor refrescante." },
+        { "palabra": "pera", "descripcion": "Una fruta jugosa y de forma alargada." }
+        ]
+    },
+    {
+        "id": "Animales",
+        "nombre": "animales",
+        "palabras": [
+        { "palabra": "perro", "descripcion": "Un amigo fiel del hombre." },
+        { "palabra": "gato", "descripcion": "Un felino independiente y cariñoso." },
+        { "palabra": "elefante", "descripcion": "Un animal de gran tamaño con trompa." },
+        { "palabra": "leon", "descripcion": "El rey de la selva." },
+        { "palabra": "jirafa", "descripcion": "Un animal con cuello largo." },
+        { "palabra": "tigre", "descripcion": "Un felino rayado y feroz." },
+        { "palabra": "oso", "descripcion": "Un animal grande y peludo." },
+        { "palabra": "mono", "descripcion": "Un primate juguetón." },
+        { "palabra": "delfin", "descripcion": "Un mamífero marino inteligente." },
+        { "palabra": "pinguino", "descripcion": "Un ave que vive en el hielo." }
+        ]
+    },
+    {
+        "id": "Ciudad",
+        "nombre": "ciudad",
+        "palabras": [
+        { "palabra": "parque", "descripcion": "Un lugar verde y relajante para el esparcimiento." },
+        { "palabra": "biblioteca", "descripcion": "Un lugar para leer y obtener información." },
+        { "palabra": "hospital", "descripcion": "Un lugar para recibir atención médica." },
+        { "palabra": "escuela", "descripcion": "Un lugar para estudiar y aprender." },
+        { "palabra": "supermercado", "descripcion": "Un lugar para comprar alimentos y otros productos." },
+        { "palabra": "teatro", "descripcion": "Un lugar para disfrutar de obras y espectáculos." },
+        { "palabra": "cafeteria", "descripcion": "Un lugar para tomar café y merendar." },
+        { "palabra": "estacion", "descripcion": "Un lugar donde llegan y salen trenes o autobuses." },
+        { "palabra": "iglesia", "descripcion": "Un lugar de culto y oración." },
+        { "palabra": "museo", "descripcion": "Un lugar para apreciar arte y objetos históricos." }
+        ]
+    },
+    {
+        "id": "Paises",
+        "nombre": "paises",
+        "palabras": [
+        { "palabra": "estadosunidos", "descripcion": "Un país grande y diverso en América del Norte." },
+        { "palabra": "japon", "descripcion": "Un país insular en el este de Asia, conocido por su cultura única." },
+        { "palabra": "italia", "descripcion": "Un país europeo famoso por su gastronomía y arte." },
+        { "palabra": "brasil", "descripcion": "Un país sudamericano conocido por su cultura y fútbol." },
+        { "palabra": "australia", "descripcion": "Un país y continente rodeado de océanos, conocido por su fauna única." },
+        { "palabra": "india", "descripcion": "Un país en el sur de Asia, famoso por su rica historia y cultura." },
+        { "palabra": "egipto", "descripcion": "Un país africano conocido por sus antiguas pirámides y tesoros arqueológicos." },
+        { "palabra": "rusia", "descripcion": "Un país transcontinental que se extiende desde Europa del Este hasta Asia del Norte." },
+        { "palabra": "canada", "descripcion": "Un país norteamericano conocido por su belleza natural y vastos paisajes." },
+        { "palabra": "argentina", "descripcion": "Un país sudamericano famoso por su tango y cultura gauchesca." }
+        ]
+    }
+    ]
+}    
